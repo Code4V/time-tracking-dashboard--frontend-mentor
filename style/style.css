@@ -1,1 +1,1 @@
-.card__info{color:#00f}.trackers{display:grid;gap:2rem;grid-template-columns:repeat(3,1fr)}body{font:1rem Helvetica;color:#008000}
+.card__info{color:#00f}.card__info-time{display:none}.card__info-time--show{display:block}.trackers{display:grid;gap:2rem;grid-template-columns:repeat(3,1fr)}body{font:1rem Helvetica;color:#008000}
