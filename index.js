@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  const dailyData = document.querySelectorAll('.card__info-time[data-time="daily"]');
+  const dailyData = document.querySelectorAll('.card__info-time[data-time="weekly"]');
   const timeButtons = document.querySelectorAll('.profile__time-changer');
   const allTime = document.querySelectorAll('.card__info-time');
 
