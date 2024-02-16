@@ -43,8 +43,15 @@
     margin-block-start auto
     background-color darkblue
     z-index -1
-    height 40%
+    height 38%
+
 
   &__time-changer
     display block
+
+  &__time-changer:first-child
+    margin-block-start .75rem
+
+  &__time-changer:not(:first-child)
+    margin-block-start 1.15rem
     // height 25px
