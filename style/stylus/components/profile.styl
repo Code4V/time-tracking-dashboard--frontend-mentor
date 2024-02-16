@@ -9,7 +9,6 @@
   &__name 
   &__buttons
     padding-inline defaultPadding
-    padding-block-start defaultPadding
     position relative
 
   &__image
@@ -20,6 +19,7 @@
 
 
   &__name
+    padding-block-start defaultPadding
     height 62%
     background-color blue
     border-radius @border-radius
@@ -40,18 +40,20 @@
 
   &__buttons
     transform translateY(-1rem)
-    margin-block-start auto
+    // margin-block-start auto
     background-color darkblue
     z-index -1
-    height 38%
+    height 39%
 
 
   &__time-changer
     display block
+    // margin-block-end 1rem
 
   &__time-changer:first-child
-    margin-block-start .75rem
+    padding-block-start 2.5rem
 
   &__time-changer:not(:first-child)
-    margin-block-start 1.15rem
+    margin-block-start 1.25rem
+    
     // height 25px
