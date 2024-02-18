@@ -42,16 +42,26 @@
     transform translateY(-1rem)
     // margin-block-start auto
     background-color darkblue
-    z-index -1
+    // z-index -1
     height 39%
+    padding-block-start 2.75rem
 
 
   &__time-changer
     display block
+    color desaturatedblue
+    cursor auto
+    pointer-events auto !important
+    transition 350ms cubic-bezier(.14,1.08,.83,.61) color
     // margin-block-end 1rem
 
-  &__time-changer:first-child
-    padding-block-start 2.5rem
+    &--active
+      color white
+
+    &:hover
+      color paleblue
+
+
 
   &__time-changer:not(:first-child)
     margin-block-start 1.25rem

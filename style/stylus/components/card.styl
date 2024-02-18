@@ -2,35 +2,64 @@
 @import '../abstract/sizes'
 
 .card
-  padding defaultPadding
   background-color darkblue
   border-radius 1rem
+  overflow hidden
 
-  &__info-menu
+  &__background-image
     display flex
+    justify-content right
+    height 60px
+    padding-inline-end 1.5rem
+    overflow hidden
 
-  &__info-title
-    font-weight 500
+    > img
+      transform scale(1.25)
 
-  &__info-button
-    margin-inline-start auto
-    width 19px
-    height 5px
+    &--work
+      background-color lightorange
+    &--play
+      background-color softblue
+    &--study
+      background-color lightred
+    &--exercise
+      background-color limegreen
+    &--social
+      background-color violet
+    &--self-care
+      background-color softorange
 
-  &__info-time
-    display none
 
-    &--show
-      display block
+  &__info 
+    padding defaultPadding
+    padding-block-end .75rem
+    border-radius @border-radius
+    transform translateY(-1rem)
+    background-color darkblue
 
-  &__info-current
-    font-size 3rem
-    font-weight 300
+    &-menu
+      display flex
 
-  &__info-previous
-    font-size .8rem
-    color paleblue
-  
-  &__info-current
-  &__info-previous
-    margin-block-start 1rem
+    &-title
+      font-weight 500
+
+    &-button
+      margin-inline-start auto
+      width 19px
+      height 5px
+
+    &-time
+      display none
+
+      &--show
+        display block
+
+    &-current
+      margin-block-start 2rem
+      font-size 3rem
+      font-weight 300
+
+    &-previous
+      font-size .8rem
+      color paleblue
+      margin-block-start 1rem

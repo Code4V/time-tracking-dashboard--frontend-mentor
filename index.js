@@ -8,7 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
       const time = button.textContent.toLocaleLowerCase();
 
-      const timeData = document.querySelectorAll(`.card__info-time[data-time="${time}"]`);
+      const timeData = document.querySelectorAll(`.card__info-time[data-time="${time}"]`);    
+
+
+      button.classList.add('profile__time-changer--active');
 
       allTime.forEach((node) => {
         node.classList.remove('card__info-time--show');
@@ -19,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     })
   })
+
   dailyData.forEach((node) => {
     node.classList.add('card__info-time--show');
   })
