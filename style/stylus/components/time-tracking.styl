@@ -2,8 +2,11 @@
   margin-inline auto
   margin-block 253px
   display grid
-  grid-template-columns repeat(4, 1fr)
-  grid-template-rows repeat(2, 1fr)
+  max-width 90%
   min-height 518px
-  max-width calc(1110px)
   gap 1.6rem
+
+  @media screen and (min-width: 1440px)
+    grid-template-columns repeat(4, 1fr)
+    grid-template-rows repeat(2, 1fr)
+    max-width 1110px
