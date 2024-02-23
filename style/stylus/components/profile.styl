@@ -12,15 +12,19 @@
     position relative
 
   &__image
-    height 78px
-    border 3px solid white
+    max-height 64px
+    border 2.5px solid white
     border-radius 100svh
     transform translateX(-5px)
+
+      @media screen and (min-width 1440px)
+        border 3px solid white
+        height 78px
 
 
   &__name
     display: flex
-    padding-block-start defaultPadding
+    align-items center
     height 62%
     background-color blue
     border-radius @border-radius
@@ -28,18 +32,27 @@
 
     @media screen and (min-width 1440px)
       display: block
+      padding-block-start defaultPadding
 
     &-sub
       font-size .85rem
       color paleblue
-      margin-block-start 2.125rem
+
+      @media screen and (min-width 1440px)
+        margin-block-start 2.125rem
 
     &-main
       display block
       font-weight 300
-      font-size 3.5ch
-      line-height 2.7rem
-      margin-block-start .25rem
+      font-size 2.5ch
+      margin-block-start .5rem
+
+      @media screen and (min-width 1440px)
+        line-height 2.7rem
+        margin-block-start .25rem
+        font-size 3.5ch
+
+
 
     
 
