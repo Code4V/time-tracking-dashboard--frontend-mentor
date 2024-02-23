@@ -5,6 +5,10 @@
   grid-row 1 / 3
   border-radius .8rem
   overflow hidden
+  max-height 200px
+
+  @media screen and (min-width 1440px)
+    max-height none
 
   &__name 
   &__buttons
@@ -16,23 +20,29 @@
     border 2.5px solid white
     border-radius 100svh
     transform translateX(-5px)
+    margin-inline-end 1rem
+    display inline-block
 
       @media screen and (min-width 1440px)
         border 3px solid white
         height 78px
-
+        margin-inline-end 0
+        display inline
 
   &__name
-    display: flex
+    display flex
     align-items center
-    height 62%
     background-color blue
     border-radius @border-radius
     z-index 9
+    min-height 135px
+    
 
     @media screen and (min-width 1440px)
       display: block
       padding-block-start defaultPadding
+      padding-block-end auto
+      height 62%
 
     &-sub
       font-size .85rem
@@ -52,22 +62,18 @@
         margin-block-start .25rem
         font-size 3.5ch
 
-
-
-    
-
-
   &__buttons
     display flex
-    transform translateY(-1rem)
     background-color darkblue
     justify-content space-between
-    padding-block-start 2.75rem
-    
+    transform translateY(-1rem)
+    min-height 85px
+    padding-block-start .5rem
 
     @media screen and (min-width: 1440px)
+      height 38%
+      padding-block-start 2.75rem
       display block
-      height 39%
 
 
   &__time-changer
