@@ -18,16 +18,22 @@
 
     &--work
       background-color lightorange
+
     &--play
       background-color softblue
+
     &--study
       background-color lightred
+
     &--exercise
       background-color limegreen
+
     &--social
       background-color violet
+
     &--self-care
       background-color softorange
+
 
 
   &__info 
@@ -52,14 +58,38 @@
       display none
 
       &--show
-        display block
+        display flex
+        align-items center
+        margin-block-start 1rem
+
+        @media screen and (min-width 1440px)
+          flex-flow column wrap
+          align-items flex-start
+          margin-block-start 2rem
 
     &-current
-      margin-block-start 2rem
-      font-size 3rem
+      font-size 2.5rem
       font-weight 300
+      display inline-block
+
+      @media screen and (min-width 1440px)
+        font-size 3rem
+        display block
+        
 
     &-previous
-      font-size .8rem
+      vertical-align middle
+      font-size 1rem
       color paleblue
-      margin-block-start 1rem
+      display inline-block
+      position relative
+      margin-inline-start auto
+
+      @media screen and (min-width 1440px)
+        margin-block-start 1rem
+        padding-block-end auto
+        margin-inline-start 0
+        font-size .85rem
+        
+        display block
+        

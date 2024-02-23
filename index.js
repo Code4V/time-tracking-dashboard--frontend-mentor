@@ -3,13 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const dailyData = document.querySelectorAll('.card__info-time[data-time="weekly"]');
   const timeButtons = document.querySelectorAll('.profile__time-changer');
   const allTime = document.querySelectorAll('.card__info-time');
+  
+  timeButtons[1].classList.add('profile__time-changer--active');
 
   timeButtons.forEach((button) => {
     button.addEventListener('click', () => {
       const time = button.textContent.toLocaleLowerCase();
 
       const timeData = document.querySelectorAll(`.card__info-time[data-time="${time}"]`);    
-
+      
+      timeButtons.forEach((node) => {
+        node.classList.remove('profile__time-changer--active');
+      })
 
       button.classList.add('profile__time-changer--active');
 
