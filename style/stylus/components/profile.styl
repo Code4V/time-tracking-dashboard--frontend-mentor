@@ -19,11 +19,15 @@
 
 
   &__name
+    display: flex
     padding-block-start defaultPadding
     height 62%
     background-color blue
     border-radius @border-radius
     z-index 9
+
+    @media screen and (min-width 1440px)
+      display: block
 
     &-sub
       font-size .85rem
@@ -36,6 +40,8 @@
       font-size 3.5ch
       line-height 2.7rem
       margin-block-start .25rem
+
+    
 
 
   &__buttons

@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style/style.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
   <script type="module" src="index.js"></script>
-  
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <main class="time-tracking">
-    
+
     <section class="profile">
       <div class="profile__name">
         <img class="profile__image" src="images/image-jeremy.png" alt="Jeremy's Profile Picture">
-        <div class="profile__name-sub">Report for</div>
-        <span class="profile__name-main">Jeremy Robson</span>
+        <div class="profile__name-wrapper">
+          <div class="profile__name-sub">Report for</div>
+          <span class="profile__name-main">Jeremy Robson</span>
+        </div>
       </div>
       <div class="profile__buttons">
         <button type="button" value="Daily" class="profile__time-changer">Daily</button>
@@ -34,8 +45,8 @@
     </section>
 
     <section class="trackers">
-      
-      <article class="card">  
+
+      <article class="card">
         <div class="card__background-image card__background-image--work">
           <img src="images/icon-work.svg" alt="">
         </div>
@@ -58,7 +69,7 @@
           </div>
         </div>
       </article>
-  
+
       <article class="card">
         <div class="card__background-image card__background-image--play">
           <img src="images/icon-play.svg" alt="">
@@ -82,7 +93,7 @@
           </div>
         </div>
       </article>
-  
+
       <article class="card">
         <div class="card__background-image card__background-image--study">
           <img src="images/icon-study.svg" alt="">
@@ -106,7 +117,7 @@
           </div>
         </div>
       </article>
-  
+
       <article class="card">
         <div class="card__background-image card__background-image--exercise">
           <img src="images/icon-exercise.svg" alt="">
@@ -154,7 +165,7 @@
           </div>
         </div>
       </article>
-  
+
       <article class="card">
         <div class="card__background-image card__background-image--self-care">
           <img src="images/icon-self-care.svg" alt="">
@@ -181,13 +192,14 @@
 
     </section>
 
-</main>
+  </main>
 
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.github.com/Code4V">Code4V</a>.
   </div>
 
 </body>
+
 </html>
